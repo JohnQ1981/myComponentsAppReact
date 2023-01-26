@@ -2,9 +2,9 @@ import "./App.css";
 import { DiApple } from "react-icons/di";
 import { CiBatteryFull } from "react-icons/ci";
 import { MdShoppingCart } from "react-icons/md";
-import Button from "./components/Button";
+import Button from "../components/Button";
 
-function App() {
+function ButtonPage() {
   // const handleClick=()=>{
   //   console.log('working');
   // }
@@ -44,4 +44,4 @@ function App() {
   );
 }
 
-export default App;
+export default ButtonPage;
