@@ -1,4 +1,3 @@
-import "./App.css";
 import { DiApple } from "react-icons/di";
 import { CiBatteryFull } from "react-icons/ci";
 import { MdShoppingCart } from "react-icons/md";

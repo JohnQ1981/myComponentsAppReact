@@ -1,47 +1,32 @@
 import "./App.css";
-import { DiApple } from "react-icons/di";
-import { CiBatteryFull } from "react-icons/ci";
-import { MdShoppingCart } from "react-icons/md";
-import Button from "./components/Button";
-
+import Accordion from "./components/Accordion";
+import ButtonPage from "./pages/ButtonPage";
 function App() {
-  // const handleClick=()=>{
-  //   console.log('working');
-  // }
+
+  const items = [
+    {
+      id: Math.random(),
+      label: "Can I USe React on a project?",
+      content:
+        'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don"t look even slightly believable.',
+    },
+    { 
+      id: Math.random(),
+      label: "Can I USe Java Script on a project?",
+      content: 'All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. ',
+    },
+    {
+      id: Math.random(),
+      label: "Can I USe CSS on a project?",
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat ante tortor, in accumsan odio pretium et. Maecenas massa purus, tristique sed ligula vitae, porta egestas metus. Suspendisse libero lorem, bibendum at elit non, volutpat pretium eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus non viverra mauris. Integer aliquam tellus in ligula fermentum, tempus euismod neque condimentum. Fusce ac ligula augue. Aenean faucibus vulputate massa, ac consequat elit sagittis quis. Integer euismod, augue id malesuada venenatis, odio lacus ultricies magna, ac semper massa metus eget leo. Pellentesque ante ipsum, maximus eu efficitur vel, bibendum quis purus. Praesent nisl ligula, consectetur eu libero sed, pharetra feugiat massa.'
+    },
+  ];
+
   return (
-    <div>
-      App-New App being created!
-      <div>
-        <Button className='mb-3' success>
-          <DiApple />
-          Click Me!
-        </Button>
-      </div>
-      <div>
-        <Button className='mb-3' success rounded outline>
-          <CiBatteryFull />
-          Charge Me!
-        </Button>
-      </div>
-      <div>
-        <Button className='mb-3' danger>Click Me!</Button>
-      </div>
-      <div>
-        <Button className='mb-3' warning><MdShoppingCart />Buy Now!</Button>
-      </div>
-      <div>
-        <Button className='mb-3' outline danger>
-          <CiBatteryFull />
-          See Deal!
-        </Button>
-      </div>
-      <div>
-        <Button className='mb-3' primary rounded>
-          Hide Ads!
-        </Button>
-      </div>
+    <div><Accordion items ={items} />
+    <div><ButtonPage /></div>
     </div>
-  );
+    );
 }
 
 export default App;
