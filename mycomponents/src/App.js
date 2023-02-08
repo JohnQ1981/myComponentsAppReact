@@ -1,8 +1,6 @@
 import "./App.css";
 import Accordion from "./components/Accordion";
 import ButtonPage from "./pages/ButtonPage";
-import MenuPopupState from './pages/TestMenu';
-import SimpleMenu from './pages/SimpleMenu';
 function App() {
 
   const items = [
@@ -26,9 +24,7 @@ function App() {
 
   return (
     <div><Accordion items ={items} />
-    <div><SimpleMenu/></div>
     <div><ButtonPage /></div>
-    <div><MenuPopupState /></div>
     </div>
     );
 }
