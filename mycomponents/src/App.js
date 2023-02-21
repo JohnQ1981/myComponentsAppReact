@@ -1,6 +1,10 @@
 import "./App.css";
 import Accordion from "./components/Accordion";
 import ButtonPage from "./pages/ButtonPage";
+import Pdf from './pages/Pdf';
+import PdfViewer from "./pages/PdfViewer";
+import PdfViewer1 from "./pages/PdfViewer1";
+
 function App() {
 
   const items = [
@@ -28,8 +32,14 @@ function App() {
   ];
 
   return (
-    <div><Accordion items ={items} />
+    
+    <div>
+      
+    <Accordion items ={items} />
     <div><ButtonPage /></div>
+    <div><Pdf /></div>
+    <PdfViewer />
+    <div><PdfViewer1 /></div>
     </div>
     );
 }
