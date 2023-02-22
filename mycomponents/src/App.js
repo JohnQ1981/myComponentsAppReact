@@ -1,9 +1,23 @@
+import {useState} from 'react';
 import "./App.css";
-import AccordionPage from './pages/AccordionPage'
+import AccordionPages from "./pages/AccordionPages";
+import Dropdown from "./components/Dropdown";
+
 function App() {
-return(
+const options =[
+  {label: 'Red' , value: 'red'},
+  {label: 'Green' , value: 'green'},
+  {label: 'Blue' , value: 'blue'}
+];
+
+const [] =useState();
+
+  return (
+    
     <div>
-      <AccordionPage />
+      <div> <Dropdown  options ={options}/></div>
+    <AccordionPages />
+    
     </div>
 );
   
