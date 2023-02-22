@@ -20,7 +20,7 @@ const PdfViewer1 = ({ pdfUrl }) => {
       <button onClick={toggleFullScreen}>
         {isFullScreen ? 'Exit Full Screen' : 'Full Screen'}
       </button>
-      <iframe src={pdfUrl} width="100%" height="600px"></iframe>
+      <iframe title ={Math.random()} src={pdfUrl} width="100%" height="600px"></iframe>
     </div>
   );
 };

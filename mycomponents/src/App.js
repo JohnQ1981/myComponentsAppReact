@@ -10,12 +10,15 @@ const options =[
   {label: 'Blue' , value: 'blue'}
 ];
 
-const [] =useState();
+const [selection, setSelection] =useState(null);
+const handleSelection =(option)=>{
+  setSelection(option)
+}
 
   return (
     
     <div>
-      <div> <Dropdown  options ={options}/></div>
+      <div> <Dropdown  options ={options} selection ={selection} onSelect ={handleSelection}/></div>
     <AccordionPages />
     
     </div>
