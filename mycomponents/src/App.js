@@ -18,9 +18,10 @@ const handleSelection =(option)=>{
   return (
     
     <div>
-      <div> <Dropdown  options ={options} selection ={selection} onSelect ={handleSelection}/></div>
-    <AccordionPages />
-    
+      <div> <Dropdown  options ={options} value ={selection} onChange ={handleSelection}/></div>
+    <div><hr/></div>
+    <br/>
+    <div><AccordionPages /></div>
     </div>
 );
   
