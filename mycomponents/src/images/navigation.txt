@@ -1,0 +1,9 @@
+window.location.pathname'/dropdown'
+
+window.history.pushState({},'','accordion');
+
+window.history.pushState({},'','/b21');
+
+window.history.pushState({},'','/a1');
+
+window.addEventListener('popstate', ()=>console.log('I am at', window.location.pathname));

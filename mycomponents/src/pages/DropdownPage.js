@@ -1,7 +1,5 @@
 import {useState} from 'react';
-
-import AccordionPages from "./pages/AccordionPages";
-import Dropdown from "..Dropdown/components/Dropdown";
+import Dropdown from '../components/Dropdown';
 
 function DropdownPage() {
 const options =[
@@ -21,7 +19,10 @@ const handleSelection =(option)=>{
       <div> <Dropdown  options ={options} value ={selection} onChange ={handleSelection}/></div>
     <div><hr/></div>
     <br/>
-    <div><AccordionPages /></div>
+   
+    <br/>
+    <hr/>
+    
     </div>
 );
   
