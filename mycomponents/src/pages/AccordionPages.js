@@ -1,5 +1,4 @@
 import Accordion from "../components/Accordion";
-import ButtonPage from "./ButtonPage";
 import Pdf from './Pdf';
 import PdfViewer from "./PdfViewer";
 import PdfViewer1 from "./PdfViewer1";
@@ -35,7 +34,7 @@ function AccordionPages() {
     <div>
       
     <Accordion items ={items} />
-    <div><ButtonPage /></div>
+   
     <div><Pdf /></div>
     <PdfViewer />
     <div><PdfViewer1 /></div>
